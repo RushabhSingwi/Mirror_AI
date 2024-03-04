@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Skincare & Makeup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav>
+        <button type="submit"><i class="fa fa-search"></i></button>
+        <a href="#Login/Sign-Up">Login/Sign-Up</a>
+        <!-- <a href="#camera" class="icon">📷</a>
+        <a href="#user" class="icon">👤</a>
+        <a href="#signup" class="icon">Sign Up</a>
+        <a href="#chat" class="icon">💬</a> -->
+    </nav>
+
+    <div class="himg">
+        <div class="htext">
+            <h1>Mirror.AI</h1>
+    </div>
+    <center>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="face2.jpg"  style="width:100%; height: 500px;">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="mp.jpg"  style="width:100%; height: 500px;" >
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="face3.jpg"  style="width:100%; height: 500px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="type.jpg"  style="width:100%; height: 500px;">
+          </div>
+        
+        </div>
+        <br>
+    </center>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        
+        </div>
+        
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 6000); // Change image every 4 seconds
+        }
+        </script>
+
+
+
+
+        
+    </div>
+
+    <section id="home" class="main-section">
+        <h2>Welcome</h2>
+    </section>
+
+    <section id="products" class="products-section">
+        <h2>Our Products</h2>
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <p>Product 1 Description</p>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <p>Product 2 Description</p>
+        </div>
+        <!-- Add more products as needed -->
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>Learn about our mission and commitment to providing the best skincare and makeup products.</p>
+        <img src="team.jpg" alt="Our Team">
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? Reach out to our friendly customer support team.</p>
+        <a href="mailto:info@skincaremakeup.com">info@skincaremakeup.com</a>
+    </section>
+
+    <!-- <footer>
+        <p>&copy; 2024 Skincare & Makeup. All rights reserved.</p>
+    </footer> -->
+
+</body>
+</html>
